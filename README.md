@@ -51,6 +51,13 @@ The focus of this course will be to provide you with the basic mathematical and 
 - Shrinkage Methods: the Lasso and Ridge Regression
 
 
+###Assessment
+The focus of this course will be to provide you with the basic techniques available for making informed, data-driven decisions using the R programming language. This is *not* a statistics course, but will provide you the intuition to make hypotheses about complex questions through visualization, wrangling, manipulation, and exploration of data. The course will be graded based on the following components:
+
+- **Assignments** (30%): You will be assigned computational and theoretical homework assignments to be completed and turned in on Canvas
+- **Quizzes** (20%): Each week you will be given a short quiz that tests the main lessons taught in class from the previous week. These are given on **Mondays at 9:00 AM**
+- **Final Exam** (20%): The final exam will be a comprehensive exam covering the main components of Regression analysis
+- **Final Project** (30%): The final project will be a computational case study that brings together the techniques learned throughout the semester. The description for this project will be provided towards the mid point of the semester.
 
 ### Schedule
 
