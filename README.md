@@ -22,7 +22,7 @@ By the end of this course, you will be able to
 - Use R to load and manipulate data, fit regression models, and generate various outputs like ANOVA tables, confidence intervals for parameters, and diagnostic assessments
 - Verify/test whether or not fitted residuals conform to the assumptions that underlie classical regression
 - Identify and manage outliers and influential observations
-- Assess and address multicollinearity, heteroscedasticity, autocorrelation, a non-normal error term, and specification errors 
+- Assess and address multicollinearity, heteroscedasticity, autocorrelation, non-normality, model misspecification
 - Communicate the results of complete and well-reasoned regression analysis
 
 
