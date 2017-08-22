@@ -78,6 +78,7 @@ The focus of this course will be to provide you with the basic mathematical and 
 | Influential Points and Outliers | | | |
 
 **Model Selection**
+
 | Topic | Reading | Practice | In-Class Code |
 |:--- | :---  | :---  |  :--- |
 | Variable Selection | | | |
@@ -87,6 +88,7 @@ The focus of this course will be to provide you with the basic mathematical and 
 | Transformations | | | | 
 
 **Generalized Linear Models**
+
 | Topic | Reading | Practice | In-Class Code |
 |:--- | :---  | :---  |  :--- |
 | Logistic and Multinomial Regression | | | | 
