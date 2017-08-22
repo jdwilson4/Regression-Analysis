@@ -51,9 +51,9 @@ The focus of this course will be to provide you with the basic mathematical and 
 
 | Topic | Reading | Practice | In-Class Code |
 |:--- | :---  | :---  |  :--- |
-|[Intro and A Brief History of Data Science](https://github.com/jdwilson4/Regression-Analysis/blob/master/Lecture%20Notes/Introduction.pdf)| [Ch. 1 of *Doing Data Science*](https://www.safaribooksonline.com/library/view/doing-data-science/9781449363871/ch01.html) | | |
+|[Intro and A Brief History of Data Science](https://github.com/jdwilson4/Regression-Analysis/blob/master/Lectures/Lecture%201%20Introduction.pdf)| [Ch. 1 of *Doing Data Science*](https://www.safaribooksonline.com/library/view/doing-data-science/9781449363871/ch01.html) | | |
 | [Overview of Machine Learning](https://github.com/jdwilson4/Regression-Analysis/blob/master/Lectures/Intro_Machine_Learning.pdf) | [Ch. 1 of ISL](http://www-bcf.usc.edu/~gareth/ISL/ISLR%20First%20Printing.pdf) | | |
-| [Model Building from the Statistical Learning Perspective](https://github.com/jdwilson4/Regression-Analysis/blob/master/Lecture%20Notes) | [Ch. 2 of ISL](https://github.com/jdwilson4/Regression-Analysis/blob/master/Lectures/Lecture%202%20Intro%20to%20Statistical%20Modeling.pdf)| | |
+| [Model Building from the Statistical Learning Perspective](https://github.com/jdwilson4/Regression-Analysis/blob/master/Lectures/Lecture%202%20Intro%20to%20Statistical%20Modeling.pdf) | [Ch. 2 of ISL](https://github.com/jdwilson4/Regression-Analysis/blob/master/Lectures/Lecture%202%20Intro%20to%20Statistical%20Modeling.pdf)| | |
 | Simple and Multiple Linear Regression | [Ch. 3 of ISL](http://www-bcf.usc.edu/~gareth/ISL/ISLR%20First%20Printing.pdf)| | |
 | Basics of Statistical Inference | | | |
 | The Gaussian, t, Chi-Squared, and F Distributions | | | |
