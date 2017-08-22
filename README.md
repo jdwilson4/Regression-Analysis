@@ -1,25 +1,30 @@
-# ICPSR: Network Analysis I
+# MSAN 601 - Linear Regression Analysis
 
 ## James D. Wilson
 
 **Email**: jdwilson4@usfca.edu
 
-**Class Time**: M, W, 10:00 - 11:50 AM; 1:15 - 3:05 PM in Harney 527
+**Time Line**: Wednesday, August 22nd - Wednesday, October 11th
 
-**Office Hours**: 3:30 - 4:30 PM in Harney 5th floor Agora
+**Class Time**: M, W: 10:00 - 11:50 AM; 1:15 - 3:05 PM in Howard Room 527
 
+**Office Hours**: M, W: 3:30 - 4:30 PM in Howard 5th floor Agora 
 
+**Grader**: 
 **Syllabus**: [Link](https://github.com/jdwilson4/Network-Analysis-I/blob/master/Syllabus_Network_Analtyics.pdf)
 
 ## Course Learning Outcomes
 
 By the end of this course, you will be able to
 
-- Proficiently wrangle, manipulate, and explore network data using the R programming language
-- Utilize contemporary network R libraries including *statnet* and *igraph*
-- Visualize network data
-- Partition networks using contemporary community detection methods
-- Formulate data-driven hypotheses about relational systems using network analysis tools
+- Formulate and apply classical simple and multiple linear regression models
+- Formulate and test hypotheses and use models for both prediction and explanation
+- Use R to load and manipulate data, fit regression models, and generate various outputs like ANOVA tables, confidence intervals for parameters, and diagnostic assessments
+- Verify/test whether or not fitted residuals conform to the assumptions that underlie classical regression
+- Identify and manage outliers and influential observations
+- Assess and address multicollinearity, heteroscedasticity, autocorrelation, a non-normal error term, and specification errors 
+- Communicate the results of complete and well-reasoned regression analysis
+
 
 ## Course Overview
 
@@ -27,10 +32,14 @@ By the end of this course, you will be able to
 The focus of this course will be to provide you with the basic mathematical and computational techniques available for making informed, data-driven decisions using regression models. We will implement the models using the R programming language. We will discuss the following topics
 
 - Distributional Theory: the Normal, t, Chi-Squared, and F distributions
+- Statistical Inference: estimation, hypothesis tests, and confidence intervals
 - Simple and Multiple Linear Regression
 - Model Building and Variable Selection
 - Outlier detection
-- Model Diagnostics: 
+- Model Diagnostics: outliers, multicollinearity, non-normality, autocorrelation
+- Analysis of Variance
+- Logistic Regression
+- Penalized Regression: the Lasso and Ridge Regression
 
 
 
@@ -38,20 +47,17 @@ The focus of this course will be to provide you with the basic mathematical and 
 
 <!-- **Completed Assignments:** [Submit](https://www.dropbox.com/request/mShmGgweXQGIhWxa1Xma) -->
 
-**Intro to Regression** 
+**Introduction and Motivation** 
 
 | Topic | Reading | Practice | In-Class Code |
 |:--- | :---  | :---  |  :--- |
+|[Intro and A Brief History of Data Science](https://github.com/jdwilson4/Regression-Analysis/blob/master/Lecture%20Notes/Introduction.pdf)| [Ch. 1 of *Doing Data Science*](https://www.safaribooksonline.com/library/view/doing-data-science/9781449363871/ch01.html) | | |
+| Model Building from the Statistical Learning Perspective | [Ch. 2 of ISL](http://www-bcf.usc.edu/~gareth/ISL/ISLR%20First%20Printing.pdf)| | |
+| Intro to Simple and Multiple Linear Regression | [Ch. 3 of ISL](http://www-bcf.usc.edu/~gareth/ISL/ISLR%20First%20Printing.pdf)| | |
+| Basics of Statistical Inference | | | |
 | The Gaussian, t, Chi-Squared, and F Distributions | | | |
-| Model Building from a Statistical Learning Perspective | | | |
 | Simple Linear Regression | | | | 
 | Multiple Linear Regression | | | |
-
-
-
-|[Intro and A Brief History of Data Science](https://github.com/jdwilson4/Network-Analysis-I/blob/master/Lecture%20Notes/Introduction.pdf)| [Ch. 1 of *Doing Data Science*](https://www.safaribooksonline.com/library/view/doing-data-science/9781449363871/ch01.html) |[Assignment 1](https://github.com/jdwilson4/Network-Analysis-I/blob/master/Assignments/Assignment1.pdf)| - |
-|[Basics of R and RStudio](https://github.com/jdwilson4/Network-Analysis-I/blob/master/Lecture%20Notes/R%20and%20RStudio.pdf)|  [Ch. 2 and 4 of *R for Data Science*](http://r4ds.had.co.nz/index.html)|[Assignment 2](https://github.com/jdwilson4/Network-Analysis-I/blob/master/Assignments/Assignment2.pdf)| [Coding Basics](https://github.com/jdwilson4/Network-Analysis-I/blob/master/Code/Basics_in_R.R)|
-|[Data Structures in R](https://github.com/jdwilson4/Network-Analysis-I/blob/master/Lecture%20Notes/Data%20Structures.pdf)| [Ch. 20 of *R for Data Science*](http://r4ds.had.co.nz/vectors.html) |  [Assignment 3](https://github.com/jdwilson4/Network-Analysis-I/blob/master/Assignments/Assignment3.pdf)| [Lists and Data Frames](https://github.com/jdwilson4/Network-Analysis-I/blob/master/Code/Lists_Data_Frames.R) |
 
 
 
