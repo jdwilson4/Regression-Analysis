@@ -10,8 +10,17 @@
 
 **Office Hours**: M, W: 3:30 - 4:30 PM in Howard 5th floor Agora 
 
-**Grader**: 
+**Grader**: Anshika Srivastava (asrivastava3@dons.usfca.edu)
+
 **Syllabus**: [Link](https://github.com/jdwilson4/Network-Analysis-I/blob/master/Syllabus_Network_Analtyics.pdf)
+
+## Textbooks
+
+- *Applied Linear Regression Models- 4th Edition* by Kutner, Nachtsheim, and Neter (Required)
+- *Introduction to Statistical Learning* ([online](http://www-bcf.usc.edu/~gareth/ISL/ISLR%20First%20Printing.pdf))
+- *Elements of Statistical Learning* ([online](https://web.stanford.edu/~hastie/Papers/ESLII.pdf))
+- *Linear Models with R* by Julian Faraway
+- *Statistical Inference* by Casella and Berger
 
 ## Course Learning Outcomes
 
@@ -37,9 +46,9 @@ The focus of this course will be to provide you with the basic mathematical and 
 - Model Building and Variable Selection
 - Outlier detection
 - Model Diagnostics: outliers, multicollinearity, non-normality, autocorrelation
-- Analysis of Variance
+- Analysis of Variance (ANOVA)
 - Logistic Regression
-- Penalized Regression: the Lasso and Ridge Regression
+- Shrinkage Methods: the Lasso and Ridge Regression
 
 
 
@@ -54,11 +63,34 @@ The focus of this course will be to provide you with the basic mathematical and 
 |[Intro and A Brief History of Data Science](https://github.com/jdwilson4/Regression-Analysis/blob/master/Lectures/Lecture%201%20Introduction.pdf)| [Ch. 1 of *Doing Data Science*](https://www.safaribooksonline.com/library/view/doing-data-science/9781449363871/ch01.html) | | |
 | [Overview of Machine Learning](https://github.com/jdwilson4/Regression-Analysis/blob/master/Lectures/Intro_Machine_Learning.pdf) | [Ch. 1 of ISL](http://www-bcf.usc.edu/~gareth/ISL/ISLR%20First%20Printing.pdf) | | |
 | [Model Building from the Statistical Learning Perspective](https://github.com/jdwilson4/Regression-Analysis/blob/master/Lectures/Lecture%202%20Intro%20to%20Statistical%20Modeling.pdf) | [Ch. 2 of ISL](https://github.com/jdwilson4/Regression-Analysis/blob/master/Lectures/Lecture%202%20Intro%20to%20Statistical%20Modeling.pdf)| | |
-| Simple and Multiple Linear Regression | [Ch. 3 of ISL](http://www-bcf.usc.edu/~gareth/ISL/ISLR%20First%20Printing.pdf)| | |
 | Basics of Statistical Inference | | | |
 | The Gaussian, t, Chi-Squared, and F Distributions | | | |
 
+**Model Fitting and Inference**
 
+| Topic | Reading | Practice | In-Class Code |
+|:--- | :---  | :---  |  :--- |
+| Simple and Multiple Linear Regression | [Ch. 3 of ISL](http://www-bcf.usc.edu/~gareth/ISL/ISLR%20First%20Printing.pdf)| | |
+| Least Squares Estimation | | | |
+| Tests, Confidence Intervals, and Prediction Intervals| | | |
+| Analysis of Variance | | | |
+| Tests of Normality and Homoscedasticity| | | |
+| Influential Points and Outliers | | | |
+
+**Model Selection**
+| Topic | Reading | Practice | In-Class Code |
+|:--- | :---  | :---  |  :--- |
+| Variable Selection | | | |
+| Multicollinearity | | | |
+| Subset Selection | | | |
+| Shrinkage Methods - Ridge and Lasso | | | |
+| Transformations | | | | 
+
+**Generalized Linear Models**
+| Topic | Reading | Practice | In-Class Code |
+|:--- | :---  | :---  |  :--- |
+| Logistic and Multinomial Regression | | | | 
+| Poisson Regression | | | | 
 
 
 ### Additional Resources
