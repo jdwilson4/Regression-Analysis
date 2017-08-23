@@ -12,7 +12,7 @@
 
 **Grader**: Anshika Srivastava (asrivastava3@dons.usfca.edu)
 
-**Syllabus**: [Link](https://github.com/jdwilson4/Network-Analysis-I/blob/master/Syllabus_Network_Analtyics.pdf)
+**Syllabus**: [Link](https://github.com/jdwilson4/Regression-Analysis/blob/master/Fall_2017.pdf)
 
 ## Textbooks
 
