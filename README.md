@@ -52,6 +52,7 @@ The focus of this course will be to provide you with the basic mathematical and 
 
 
 ###Assessment
+
 The focus of this course will be to provide you with the basic techniques available for making informed, data-driven decisions using the R programming language. This is *not* a statistics course, but will provide you the intuition to make hypotheses about complex questions through visualization, wrangling, manipulation, and exploration of data. The course will be graded based on the following components:
 
 - **Assignments** (30%): You will be assigned computational and theoretical homework assignments to be completed and turned in on Canvas
