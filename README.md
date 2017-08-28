@@ -64,6 +64,10 @@ The focus of this course will be to provide you with the basic techniques availa
 
 - 8/28/17: [Quiz 1](https://github.com/jdwilson4/Regression-Analysis/blob/master/Quizzes/Quiz1.pdf)
 
+### Homework
+
+- [Homework 1](https://github.com/jdwilson4/Regression-Analysis/blob/master/Homework/Homework1.pdf). Due Wednesday, September 6th at 9:00 AM
+
 ### Schedule
 
 <!-- **Completed Assignments:** [Submit](https://www.dropbox.com/request/mShmGgweXQGIhWxa1Xma) -->
