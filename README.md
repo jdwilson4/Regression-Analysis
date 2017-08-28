@@ -60,6 +60,10 @@ The focus of this course will be to provide you with the basic techniques availa
 - **Final Exam** (20%): The final exam will be a comprehensive exam covering the main components of Regression analysis
 - **Final Project** (30%): The final project will be a computational case study that brings together the techniques learned throughout the semester. The description for this project will be provided towards the mid point of the semester.
 
+### Quizzes
+
+- 8/28/17: [Here](https://github.com/jdwilson4/Regression-Analysis/blob/master/Quizzes/Quiz1.pdf)
+
 ### Schedule
 
 <!-- **Completed Assignments:** [Submit](https://www.dropbox.com/request/mShmGgweXQGIhWxa1Xma) -->
