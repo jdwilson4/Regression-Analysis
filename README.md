@@ -66,7 +66,7 @@ The focus of this course will be to provide you with the basic techniques availa
 
 ### Homework
 
-- [Homework 1](https://github.com/jdwilson4/Regression-Analysis/blob/master/Homework/Homework1.pdf). Due Wednesday, September 6th at 9:00 AM
+- [Homework 1](https://github.com/jdwilson4/Regression-Analysis/blob/master/Homework/Homework1.pdf). Due Thursday, September 7th at 9:00 AM on Canvas
 
 ### Schedule
 
