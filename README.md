@@ -62,7 +62,7 @@ The focus of this course will be to provide you with the basic techniques availa
 
 ### Quizzes
 
-- 8/28/17: [Here](https://github.com/jdwilson4/Regression-Analysis/blob/master/Quizzes/Quiz1.pdf)
+- 8/28/17: [Quiz 1](https://github.com/jdwilson4/Regression-Analysis/blob/master/Quizzes/Quiz1.pdf)
 
 ### Schedule
 
