@@ -99,7 +99,7 @@ The focus of this course will be to provide you with the basic techniques availa
 | Variable Selection | | | |
 | Multicollinearity | | | |
 | Subset Selection | | | |
-| Shrinkage Methods - Ridge and Lasso | | | |
+| [Shrinkage Methods - Ridge and Lasso](https://github.com/jdwilson4/Regression-Analysis/blob/master/Lectures/Lecture%203%20Shrinkage%20Methods.pdf) | [Ch. 6 of ISL](http://www-bcf.usc.edu/~gareth/ISL/ISLR%20First%20Printing.pdf)| | |
 | Transformations | | | | 
 
 **Generalized Linear Models**
