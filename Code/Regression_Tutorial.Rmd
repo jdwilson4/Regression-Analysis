@@ -1,0 +1,305 @@
+---
+title: "Initial Trials with Regression Analysis in R"
+author: James D. Wilson, Assistant Professor of Statistics, University of San Franscisco 
+date: September 5th, 2017
+output: html_document
+---
+
+```{r, echo = FALSE}
+#turn off warnings throughout this script
+options(warn=-1)
+```
+
+Components of Regression
+===============================
+
+We will first *briefly* review the basic components of a regression. The goal of a **regression model** is to quantify the relationship between two variables $Y$ and **X** where:
+
+- $Y$ is the **response variable**, or **dependent variable**. This is typically treated as a vector of *n* observations where entry $Y_i$ is the $i^{th}$ observation.
+- **X** is the design matrix of **explanatory variables**, or **independent variables**. This is typically an *n x p* matrix where *p* = number of explanatory variables. In this way, the $i^{th}$ column of **X** represents the *n* observations of the $i^{th}$ variable.
+
+A **regression model** is a formal means of expressing the relationship between **X** and $Y$. In particular, a regression model postulates that:
+
+1) There is a probability distribution of $Y$ for each level of **X**
+2) The means (expected value) of these probability distributions vary in some systematic fashion with **X**
+
+**Important Note**: The existence of a statistical relationship between the response variable $Y$ and the explanatory variable **X** does **not** imply that $Y$ depends *causally* on **X**! There is a large branch of statistics devoted to understanding how to determine causality; however, we will not talk about that here.
+
+###Example: The *cars* data set preloaded in R###
+R comes equipped with a large collection of data sets that are very simple to access. These data serve as a great resource for teaching and simple exploratory analyses. Let's look at what datasets are available.
+
+
+```{r, echo = TRUE}
+data()
+```
+
+We will look at the *cars* data set. Let's load and look at a summary of this data.
+
+```{r}
+data(cars)
+?cars
+summary(cars)
+```
+
+Now let's look at a scatter plot of *dist* against *speed*. 
+
+```{r, echo = TRUE}
+plot(cars$dist ~ cars$speed, xlab = "Speed", ylab = "Distance")
+```
+
+From the above plot, it certainly looks like there is a relationship between the variables *dist* and *speed*. But the big question is, what kind of regression model should we fit? We turn now to two popular types of regression: linear regression and logistic regression.
+
+
+Linear Regression
+===============================
+Given a response variable $Y$ and the design matrix **X**, the **linear regression model** of $Y$ on **X** is given by:
+
+$$Y = {\bf X}\beta + \epsilon \qquad \qquad \qquad \qquad \hskip .75pc (1)$$
+
+Here,
+
+- $\beta$ is a vector of $p$ parameters (typically unknown)
+- $\epsilon$ is a vector of *errors*. 
+
+If **X** only contains one explanatory variable, the linear regression model in (1) reduces to **simple linear regression** as follows: 
+
+$$Y_i = \beta_0 + \beta_1 x_i + \epsilon_i \qquad \qquad \qquad \hskip .5pc (2)$$
+
+**Note**: We typically include a column of 1s as the first column in a design matrix **X** to account for the intercept term $\beta_0$. 
+
+For statistical inference purposes (i.e. hypothesis testing, prediction, and confidence intervals), we make *one* of the following *two* assumptions on the errors $\epsilon$:
+
+1) $\epsilon_i \stackrel{iid}{\sim} N(0, \sigma^2)$
+2) $\mathbb{E}[\epsilon_i] = 0$, $Var(\epsilon_i) = \sigma^2$, and $Cov(\epsilon_i, \epsilon_j) = 0$
+
+As commonly done in practice, let's assume that 1) above is true. Then if we would like to fit model (1), we estimate (via a least-squares approach that turns out to be the normal equations from linear algebra) unknown parameters $\beta$ using $\hat{\beta}$ where:
+
+$$\hat{\beta} = ({\bf X}^T {\bf X})^{-1}{\bf X}^T Y$$
+
+Then our best estimate for $Y$ is given by $\hat{Y} = {\bf X}\hat{\beta}$. The estimate $\hat{Y}$ is called the **least-squares** estimate for $Y$ and one can easily draw the least-squares line using these estimates. 
+
+Using assumption 1), we are able to then derive a distribution for our estimate $\hat{\beta}$. In particular, if we know the variance of $\epsilon$ then
+
+ $$\hat{\beta} \sim N(\beta, \sigma^2({\bf X}^T {\bf X})^{-1}) \qquad \qquad \qquad(3)$$
+ 
+Often it is the case that we do **not** know the true variance of $\epsilon$, so we can estimate it by calculating the sample variance of the residuals $e = Y - \hat{Y}$. Supposing that 
+
+$$s^2 = \sum_{i = 1}^n((e_i - \bar{e})^2) / (n - 1) $$
+
+Now let $V = ({\bf X}^T {\bf X})^{-1}$ be the $p$ x $p$ matrix representing the covariance of $\hat{\beta}$ from (3). Then if we estimate $\sigma^2$ with $s^2$, we have that for each $\beta_i$,
+
+$$ \dfrac{\hat{\beta}_i - \beta_i}{s * \sqrt{V_{i,i}}} \sim T_{n-1} \qquad \qquad \qquad \qquad (4)$$
+ 
+Importantly, (4) gives us a way now to *test* whether or not our estimates in our linear regression model are statistically significant. Indeed, for the test
+
+$$H_o: \beta_i = 0 \qquad vs. \qquad H_1: \beta_i > 0 $$
+
+we can now use a p-value under the assumption that $\hat{\beta}$ is truly a centered $T_{n-1}$ random variable. This is in fact exactly what R tells us when we fit a linear regression.
+
+###Example: A Simple Linear Regression for the *cars* data###
+
+The function *lm()* is the primary function for use here. (lm = linear model). Let's first look at an overview of the *lm()* function.
+
+```{r, echo = TRUE}
+?lm
+```
+
+Now we will fit a linear regression model of the variable *dist* on *speed*. Then we will analyze the fit using the summary function.
+
+```{r, echo = TRUE}
+reg1 <- lm(dist ~ speed, data = cars)
+names(reg1)
+summary(reg1)
+```
+
+The above summary includes a lot of important information for the fit regression model. For now, let's focus on the *Coefficients* output. The table here reports 4 outcomes for each parameter in the model: 
+
+- **Estimate**: the least squares estimate of the parameter
+- **Std. Error**: the standard error of the estimate. From equation (4), the standard error of $\hat{\beta}_i$ is $s*\sqrt{V_{i,i}}$).
+- **t-value**: the observed t-statistic as calculated using equation (4) when assuming the true $\beta_i = 0$
+- **Pr($> |t|$)**: the two sided p-value associated with the hypothesis test of whether or not $\beta_i = 0$
+
+According to our output, both the intercept and the parameter associated with *speed* are statistically significant at a 0.05 level. So, if we let $Y_i = i$th observation of *dist*, and let $x_i = i$th observation of *speed*. Our least squares regression model is 
+
+$$\hat{Y}_i = -17.5791 + 3.9324 * x_i$$
+
+Another important value given in the above output is the {\bf Multiple R-squared}. This is defined as follows:
+
+- **Multiple R-squared**: a value between 0 and 1 that represents the proportion of variation in $Y$ that is explained by the covariates in the linear model. 
+
+In general, we want these values to be as close to 1 as possible where values equal to 1 indicate that the covariates perfectly explain the variance of $Y$. In this case, $Y$ would share an exact linear relationship with the covariates. 
+
+Let's now look at the regression line on the original scatterplot.
+
+```{r, echo = TRUE}
+plot(cars$dist ~ cars$speed, xlab = "Speed", ylab = "Distance")
+abline(reg1, col = "blue", lwd = 2)
+```
+
+###Testing the Normal Assumptions of a Linear Regression###
+
+An important step in fitting a linear regression model is to ensure that a linear model explains the relationship between the two variables, and more importantly, if the normality assumptions on the errors are met. 
+
+Basic exploratory analysis and correlation coefficients can be used to evaluate the "linearity" of a fit. To test the normality assumptions, we must rely on the residuals of the fit $e = \hat{Y} - Y$. Under assumption 1), the residuals *should* be normally distributed. It follows that the standardized residuals, $r$, have a standard normal distribution. That is,
+
+$$r = \dfrac{e - \mathbb{E}[e]}{\sigma_e} \sim N(0,1)$$
+
+Of course, we don't know the true mean or variance of $e$ we estimate them and rely on the central limit theorem to give us normality. So checking our normality assumptions comes down to the following test:
+
+$$H_o: r \sim N(0,1) \qquad vs. \qquad H_1: r \nsim N(0,1)$$
+
+From earlier discussion, we know that we can use the Kolmogorov-Smirnov test of normality to test this. Let's look at the residuals from the *cars* data.
+
+```{r, echo = TRUE}
+# calculate the standardized residuals
+e <- reg1$residuals
+std.residuals <- (e - mean(e)) / sd(e)
+
+# plot the qqplot of the residuals
+qqnorm(std.residuals)
+```
+
+Now let's use the Kolmogorov-Smirnov test to test for normality of the residuals.
+```{r, echo = TRUE}
+ks.test(std.residuals, rnorm(1000))
+
+```
+
+The normality assumptions for the *cars* data are satisfied as we fail to reject the null hypothesis that the residuals are normally distributed.
+
+###Confidence Intervals and Prediction using the *predict()* function in R###
+
+Once we have fit a linear regression model, we'd often next like to predict future observations given new data, or provide confidence intervals on estimates calculated from functions of our estimated parameters. The *predict()* function in R can handle each of these situations. Let's first look at the *predict()* function.
+
+```{r, echo = TRUE}
+?predict.lm
+```
+Note that I looked up *predict.lm* rather than *predict*. This is because *predict()* is a base function in R that will have different interpretations depending upon the class of the input object. We can check the class of our variable *reg1* by typing:
+
+```{r, echo = TRUE}
+class(reg1)
+```
+
+1) **Predictions for new data**
+```{r, echo = TRUE}
+#create new speed data where all values are within our original data
+new.speeds <- c(10, 12, 15, 18)
+
+#predict confidence intervals for each of the data points
+predictions <- predict(reg1, newdata = data.frame(speed = new.speeds), type = "response", 
+                       interval = 'none', level = 0.95)
+
+#Look at the new values
+predictions
+
+#Plot them on the original plot
+plot(cars$dist ~ cars$speed, xlab = "Speed", ylab = "Distance")
+abline(reg1, col = "blue", lwd = 2)
+points(x = new.speeds, y = predictions, col = "red", pty = 5, pch = 3, cex = 2)
+```
+
+2) **Confidence Intervals for observed data**
+```{r, echo = TRUE}
+#create new speed data where all values are within our original data
+new.speed <- seq(min(cars$speed), max(cars$speed), length.out=100)
+
+#predict confidence intervals for each of the data points
+predictions <- predict(reg1, newdata = data.frame(speed = new.speed), interval = 'confidence', level = 0.95)
+
+#look at the first 6 predictions
+head(predictions)
+```
+
+Let's now plot confidence intervals for each point that we interpolated.
+
+```{r, echo = TRUE}
+# plot the original scatterplot with least squares line
+plot(cars$dist ~ cars$speed, xlab = "Speed", ylab = "Distance", type = "n")
+
+# add fill for the confidence regions
+polygon(c(rev(new.speed), new.speed), c(rev(predictions[ , 3]), predictions[ , 2]), 
+        col = 'grey80', border = NA)
+
+# Add lines for the confidence intervals
+lines(new.speed, predictions[ , 3], lty = 'dashed', col = 'green')
+lines(new.speed, predictions[ , 2], lty = 'dashed', col = 'green')
+abline(reg1, col = "blue", lwd = 2)
+points(cars$dist ~ cars$speed)
+```
+
+Case Study: Multiple Regression with the **iris** data
+=========================================================
+
+We are now ready to try a more complicated example. Below I include a chunk of code that can be used to investigate the relationship between the sepal length of flowers and their species, sepal width, petal length, and petal width. First, let's load the data and summarize each variable.
+
+```{r, echo = TRUE}
+data(iris)
+?iris
+summary(iris)
+```
+
+Now, we can look at pairwise scatterplots of these variables using the *pairs()* function.
+
+```{r, echo = TRUE}
+pairs(iris)
+```
+
+Let's now run a linear regression of *sepal.length* on the remaining variables, look at the output, and then check the normal assumptions on this regression. This is all done in the following code.
+
+```{r, echo = TRUE}
+#run a linear regression model
+reg.iris <- lm(Sepal.Length ~ Sepal.Width + Petal.Length + Petal.Width + Species, data = iris)
+summary(reg.iris)
+```
+
+Now let's define the variables used in this regression in the following way:
+
+- $Y = Sepal.Length$
+- $x_1 = Sepal.Width$
+- $x_2 =  Petal.Length$
+- $x_3 = Petal.Width$
+- $x_4 = I(Species = versicolor)$
+- $x_5 = I(Species = virginica)$
+
+Based on the above results, it appears that each of the parameter estimates are statistically significant at the 0.05 level. So, our linear regression model is given by:
+
+$$\hat{Y}_i = 2.17127 + 0.49589 x_{1,i} + 0.82924 x_{2,i} - 0.31516 x_{3,i} - 0.72356x_{4,i} - 1.02350 x_{5,i}$$
+
+**Note on Interpretation**: Here the variables $x_4$ and $x_5$ are indicator variables describing the species type. In situations where a variable is categorical (like *Species* -- having only 3 possibilities), parameters associated with indicator variables describe the change in the response when the variable takes a certain value *relative* to a *base* category. In this case, the *base* category is *Species* = 3. See the scatterplot to understand why this is the case. 
+
+Now that we understand our model, let's check the assumption that the residuals of the fit are approximately normal. We will first plot a qqplot and then run the Kolmogorov-Smirnov test of normality.
+
+```{r, echo = TRUE}
+# calculate the standardized residuals
+e <- reg.iris$residuals
+std.residuals <- (e - mean(e)) / sd(e)
+
+# plot the qqplot of the residuals
+qqnorm(std.residuals)
+```
+
+Now let's use the Kolmogorov-Smirnov test to test for normality of the residuals.
+```{r, echo = TRUE}
+ks.test(std.residuals, rnorm(1000))
+
+```
+
+In the Kolmogorov-Smirnov test, we fail to reject the null hypothesis that the residuals are normally distributed. Thus, we can be satisfied that our assumptions are met. 
+
+We can now use our regression model to predict *Sepal.Length* given new data, and the confidence intervals / prediction intervals can be once again constructed based on the Normality assumption that we made in our model. 
+
+Concluding Remarks
+---------------------------------------
+
+This lesson still only scratched the surface for the basics in Linear Regression. Other aspects of regression include:
+
+- Model selection
+- Outlier detection
+- Tests of heteroscedacity (non-constant variance)
+- Transformations on the response and variables to fit the normality / linearity assumptions
+
+Also, there are many other types of regression which will may be discussed in future workshops such as:
+
+- Logistic regression: regression for binary data
+- Poisson regression: regression for count data
+- Generalized linear models: linear models for exponential random families
