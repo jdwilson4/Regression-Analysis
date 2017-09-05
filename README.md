@@ -86,7 +86,7 @@ The focus of this course will be to provide you with the basic techniques availa
 
 | Topic | Reading | Practice | In-Class Code |
 |:--- | :---  | :---  |  :--- |
-| [Simple Linear Regression: Model and Estimation](https://github.com/jdwilson4/Regression-Analysis/blob/master/Lectures/Least_Squares_Estimation.pdf) | [Ch. 3 of ISL](http://www-bcf.usc.edu/~gareth/ISL/ISLR%20First%20Printing.pdf)| [Ch 3.6.1 - 3.6.3 ISL](http://www-bcf.usc.edu/~gareth/ISL/ISLR%20First%20Printing.pdf)| |
+| [Simple Linear Regression: Model and Estimation](https://github.com/jdwilson4/Regression-Analysis/blob/master/Lectures/Least_Squares_Estimation.pdf) | [Ch. 3 of ISL](http://www-bcf.usc.edu/~gareth/ISL/ISLR%20First%20Printing.pdf)| [Ch 3.6.1 - 3.6.3 ISL](http://www-bcf.usc.edu/~gareth/ISL/ISLR%20First%20Printing.pdf)| [Intro to Regression in R](https://github.com/jdwilson4/Regression-Analysis/blob/master/Code/Regression_Tutorial.pdf)|
 | Basics of Statistical Inference | | | |
 | Tests, Confidence Intervals, and Prediction Intervals| | | |
 | Analysis of Variance | | | |
