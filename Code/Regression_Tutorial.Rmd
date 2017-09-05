@@ -1,8 +1,8 @@
 ---
 title: "Initial Trials with Regression Analysis in R"
-author: James D. Wilson, Assistant Professor of Statistics, University of San Franscisco 
-date: September 5th, 2017
-output: html_document
+author: "James D. Wilson, Assistant Professor of Statistics, University of San Franscisco"
+date: "September 5th, 2017"
+output: pdf_document
 ---
 
 ```{r, echo = FALSE}
