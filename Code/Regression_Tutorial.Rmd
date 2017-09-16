@@ -96,7 +96,7 @@ $$H_o: \beta_i = 0 \qquad vs. \qquad H_1: \beta_i > 0 $$
 
 we can now use a p-value under the assumption that $\hat{\beta}$ is truly a centered $T_{n-1}$ random variable. This is in fact exactly what R tells us when we fit a linear regression.
 
-###Example: A Simple Linear Regression for the *cars* data###
+###Example: A Simple Linear Regression for the cars data
 
 The function *lm()* is the primary function for use here. (lm = linear model). Let's first look at an overview of the *lm()* function.
 
@@ -123,7 +123,7 @@ According to our output, both the intercept and the parameter associated with *s
 
 $$\hat{Y}_i = -17.5791 + 3.9324 * x_i$$
 
-Another important value given in the above output is the {\bf Multiple R-squared}. This is defined as follows:
+Another important value given in the above output is the **Multiple R-squared**. This is defined as follows:
 
 - **Multiple R-squared**: a value between 0 and 1 that represents the proportion of variation in $Y$ that is explained by the covariates in the linear model. 
 
@@ -204,7 +204,8 @@ points(x = new.speeds, y = predictions, col = "red", pty = 5, pch = 3, cex = 2)
 new.speed <- seq(min(cars$speed), max(cars$speed), length.out=100)
 
 #predict confidence intervals for each of the data points
-predictions <- predict(reg1, newdata = data.frame(speed = new.speed), interval = 'confidence', level = 0.95)
+predictions <- predict(reg1, newdata = data.frame(speed = new.speed),
+                       interval = 'confidence', level = 0.95)
 
 #look at the first 6 predictions
 head(predictions)
