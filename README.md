@@ -94,6 +94,7 @@ The focus of this course will be to provide you with the basic techniques availa
 **Penalized Regression and Variable Selection**
 
 | Topic | Reading | Practice | In-Class Code |
+|:--- | :---  | :---  |  :--- |
 | [Shrinkage Methods - Ridge and Lasso](https://github.com/jdwilson4/Regression-Analysis/blob/master/Lectures/Lecture%203%20Shrinkage%20Methods.pdf) | [Ch. 6 of ISL](http://www-bcf.usc.edu/~gareth/ISL/ISLR%20First%20Printing.pdf)| | [Penalized Regression in R](https://github.com/jdwilson4/Regression-Analysis/blob/master/Code/Shrinkage.pdf)|
 | Variable Selection | | | |
 
