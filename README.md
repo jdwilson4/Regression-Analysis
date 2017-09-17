@@ -90,19 +90,24 @@ The focus of this course will be to provide you with the basic techniques availa
 | [Simple Linear Regression: Model and Estimation](https://github.com/jdwilson4/Regression-Analysis/blob/master/Lectures/Least_Squares_Estimation.pdf) | [Ch. 3 of ISL](http://www-bcf.usc.edu/~gareth/ISL/ISLR%20First%20Printing.pdf)| [Ch 3.6.1 - 3.6.3 ISL](http://www-bcf.usc.edu/~gareth/ISL/ISLR%20First%20Printing.pdf)| [Intro to Regression in R](https://github.com/jdwilson4/Regression-Analysis/blob/master/Code/Regression_Tutorial.pdf)|
 | Basics of Statistical Inference | | | |
 | [Tests, Confidence Intervals, and Prediction Intervals](https://github.com/jdwilson4/Regression-Analysis/blob/master/Lectures/CI_Notes.pdf)| | | |
-| Analysis of Variance | | | |
-| Tests of Normality and Homoscedasticity| | | |
-| Influential Points and Outliers | | | |
 
-**Model Selection**
+**Penalized Regression and Variable Selection**
+
+| Topic | Reading | Practice | In-Class Code |
+| [Shrinkage Methods - Ridge and Lasso](https://github.com/jdwilson4/Regression-Analysis/blob/master/Lectures/Lecture%203%20Shrinkage%20Methods.pdf) | [Ch. 6 of ISL](http://www-bcf.usc.edu/~gareth/ISL/ISLR%20First%20Printing.pdf)| | [Penalized Regression in R](https://github.com/jdwilson4/Regression-Analysis/blob/master/Code/Shrinkage.pdf)|
+| Variable Selection | | | |
+
+
+**Model Diagnostics**
 
 | Topic | Reading | Practice | In-Class Code |
 |:--- | :---  | :---  |  :--- |
-| Variable Selection | | | |
 | Multicollinearity | | | |
-| Subset Selection | | | |
-| [Shrinkage Methods - Ridge and Lasso](https://github.com/jdwilson4/Regression-Analysis/blob/master/Lectures/Lecture%203%20Shrinkage%20Methods.pdf) | [Ch. 6 of ISL](http://www-bcf.usc.edu/~gareth/ISL/ISLR%20First%20Printing.pdf)| | |
+| Analysis of Variance | | | |
+| Tests of Normality and Homoscedasticity| | | |
+| Influential Points and Outliers | | | |
 | Transformations | | | | 
+
 
 **Generalized Linear Models**
 
