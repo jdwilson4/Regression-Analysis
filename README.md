@@ -63,13 +63,16 @@ The focus of this course will be to provide you with the basic techniques availa
 ### Quizzes
 
 - 8/28/17: [Quiz 1](https://github.com/jdwilson4/Regression-Analysis/blob/master/Quizzes/Quiz1.pdf)
-- 9/6/18: [Quiz 2](https://github.com/jdwilson4/Regression-Analysis/blob/master/Quizzes/Quiz2.pdf)
+- 9/6/17: [Quiz 2](https://github.com/jdwilson4/Regression-Analysis/blob/master/Quizzes/Quiz2.pdf)
+- 9/18/17: [Quiz 3](https://github.com/jdwilson4/Regression-Analysis/blob/master/Quizzes/Quiz3.pdf)
 
 ### Homework
 
 - [Homework 1](https://github.com/jdwilson4/Regression-Analysis/blob/master/Homework/Homework1.pdf). Due Thursday, September 7th at 9:00 AM on Canvas
 - [Homework 2](https://github.com/jdwilson4/Regression-Analysis/blob/master/Homework/Homework2.pdf). Due Thursday, 21st at 9:00 AM on Canvas
 
+### Final Case Study
+- [Case Study](). Due Friday, 10/6 at 9:00 AM. [Data](https://github.com/jdwilson4/Regression-Analysis/blob/master/Case%20Study/housing.txt); [Data Description](https://github.com/jdwilson4/Regression-Analysis/blob/master/Case%20Study/Data_Description.txt)
 ### Schedule
 
 <!-- **Completed Assignments:** [Submit](https://www.dropbox.com/request/mShmGgweXQGIhWxa1Xma) -->
