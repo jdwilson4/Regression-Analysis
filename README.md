@@ -72,7 +72,7 @@ The focus of this course will be to provide you with the basic techniques availa
 - [Homework 2](https://github.com/jdwilson4/Regression-Analysis/blob/master/Homework/Homework2.pdf). Due Thursday, 21st at 9:00 AM on Canvas
 
 ### Final Case Study
-- [Case Study](https://github.com/jdwilson4/Regression-Analysis/blob/master/Case%20Study/Case_Study.pdf). Due Friday, 10/6 at 9:00 AM. [[Data]](https://github.com/jdwilson4/Regression-Analysis/blob/master/Case%20Study/housing.txt); [[Data Description](https://github.com/jdwilson4/Regression-Analysis/blob/master/Case%20Study/Data_Description.txt); [[Morty House]](https://github.com/jdwilson4/Regression-Analysis/blob/master/Case%20Study/Morty.txt)
+- [Case Study](https://github.com/jdwilson4/Regression-Analysis/blob/master/Case%20Study/Case_Study.pdf). Due Friday, 10/6 at 9:00 AM. [[Data]](https://github.com/jdwilson4/Regression-Analysis/blob/master/Case%20Study/housing.txt); [[Data Description]](https://github.com/jdwilson4/Regression-Analysis/blob/master/Case%20Study/Data_Description.txt); [[Morty House]](https://github.com/jdwilson4/Regression-Analysis/blob/master/Case%20Study/Morty.txt)
 
 ### Schedule
 
