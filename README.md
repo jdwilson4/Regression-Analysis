@@ -65,11 +65,13 @@ The focus of this course will be to provide you with the basic techniques availa
 - 8/28/17: [Quiz 1](https://github.com/jdwilson4/Regression-Analysis/blob/master/Quizzes/Quiz1.pdf)
 - 9/6/17: [Quiz 2](https://github.com/jdwilson4/Regression-Analysis/blob/master/Quizzes/Quiz2.pdf)
 - 9/18/17: [Quiz 3](https://github.com/jdwilson4/Regression-Analysis/blob/master/Quizzes/Quiz3.pdf)
+- 9/27/17: [Quiz 4](https://github.com/jdwilson4/Regression-Analysis/blob/master/Quizzes/Quiz4.pdf)
 
 ### Homework
 
 - [Homework 1](https://github.com/jdwilson4/Regression-Analysis/blob/master/Homework/Homework1.pdf). Due Thursday, September 7th at 9:00 AM on Canvas
-- [Homework 2](https://github.com/jdwilson4/Regression-Analysis/blob/master/Homework/Homework2.pdf). Due Thursday, 21st at 9:00 AM on Canvas
+- [Homework 2](https://github.com/jdwilson4/Regression-Analysis/blob/master/Homework/Homework2.pdf). Due Thursday, September 21st at 9:00 AM on Canvas
+- [Homework 3](https://github.com/jdwilson4/Regression-Analysis/blob/master/Homework/Homework3.pdf). Due Wednesday, October 11th at 5:00 PM on Canvas
 
 ### Final Case Study
 - [Case Study](https://github.com/jdwilson4/Regression-Analysis/blob/master/Case%20Study/Case_Study.pdf). Due Friday, 10/6 at 9:00 AM. [[Data]](https://github.com/jdwilson4/Regression-Analysis/blob/master/Case%20Study/housing.txt); [[Data Description]](https://github.com/jdwilson4/Regression-Analysis/blob/master/Case%20Study/Data_Description.txt); [[Morty House]](https://github.com/jdwilson4/Regression-Analysis/blob/master/Case%20Study/Morty.txt)
@@ -93,25 +95,20 @@ The focus of this course will be to provide you with the basic techniques availa
 |:--- | :---  | :---  |  :--- |
 | [Simple Linear Regression: Model and Estimation](https://github.com/jdwilson4/Regression-Analysis/blob/master/Lectures/Least_Squares_Estimation.pdf) | [Ch. 3 of ISL](http://www-bcf.usc.edu/~gareth/ISL/ISLR%20First%20Printing.pdf)| [Ch 3.6.1 - 3.6.3 ISL](http://www-bcf.usc.edu/~gareth/ISL/ISLR%20First%20Printing.pdf)| [Intro to Regression in R](https://github.com/jdwilson4/Regression-Analysis/blob/master/Code/Regression_Tutorial.pdf)|
 | Basics of Statistical Inference | | | |
-| [Tests, Confidence Intervals, and Prediction Intervals](https://github.com/jdwilson4/Regression-Analysis/blob/master/Lectures/CI_Notes.pdf)| | | |
-
-**Penalized Regression and Variable Selection**
-
-| Topic | Reading | Practice | In-Class Code |
-|:--- | :---  | :---  |  :--- |
+| [Tests, Confidence Intervals, and Prediction Intervals](https://github.com/jdwilson4/Regression-Analysis/blob/master/Lectures/CI_Notes.pdf)| [Ch 2 and 3 of Linear Models with R](http://www.utstat.toronto.edu/~brunner/books/LinearModelsWithR.pdf)| | |
 | [Shrinkage Methods - Ridge and Lasso](https://github.com/jdwilson4/Regression-Analysis/blob/master/Lectures/Lecture%203%20Shrinkage%20Methods.pdf) | [Ch. 6 of ISL](http://www-bcf.usc.edu/~gareth/ISL/ISLR%20First%20Printing.pdf)| | [Penalized Regression in R](https://github.com/jdwilson4/Regression-Analysis/blob/master/Code/Shrinkage.pdf)|
-| Variable Selection | | | |
+
 
 
 **Model Diagnostics**
 
 | Topic | Reading | Practice | In-Class Code |
 |:--- | :---  | :---  |  :--- |
-| Multicollinearity | | | |
-| Analysis of Variance | | | |
-| Tests of Normality and Homoscedasticity| | | |
-| Influential Points and Outliers | | | |
-| Transformations | | | | 
+| Tests of Normality | [Ch 4.1 of Linear Models with R](http://www.utstat.toronto.edu/~brunner/books/LinearModelsWithR.pdf) | | |
+| Influential Points and Outliers | [Ch 4.2 of Linear Models with R](http://www.utstat.toronto.edu/~brunner/books/LinearModelsWithR.pdf) | | |
+| Tests of Homoscedacity and Model Structure| [Ch 4.1, 4.3 of Linear Models with R](http://www.utstat.toronto.edu/~brunner/books/LinearModelsWithR.pdf)| | |
+| Collinearity | [Ch 5.3 of Linear Models with R](http://www.utstat.toronto.edu/~brunner/books/LinearModelsWithR.pdf)| | |
+| Transformations | [Ch 7 of Linear Models with R](http://www.utstat.toronto.edu/~brunner/books/LinearModelsWithR.pdf)| | |
 
 
 **Generalized Linear Models**
