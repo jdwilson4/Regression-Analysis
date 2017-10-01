@@ -104,9 +104,8 @@ The focus of this course will be to provide you with the basic techniques availa
 
 | Topic | Reading | Practice | In-Class Code |
 |:--- | :---  | :---  |  :--- |
-| Tests of Normality | [Ch 4.1 of Linear Models with R](http://www.utstat.toronto.edu/~brunner/books/LinearModelsWithR.pdf) | | |
-| Influential Points and Outliers | [Ch 4.2 of Linear Models with R](http://www.utstat.toronto.edu/~brunner/books/LinearModelsWithR.pdf) | | |
-| Tests of Homoscedacity and Model Structure| [Ch 4.1, 4.3 of Linear Models with R](http://www.utstat.toronto.edu/~brunner/books/LinearModelsWithR.pdf)| | |
+| [Influential Points and Outliers](https://github.com/jdwilson4/Regression-Analysis/blob/master/Lectures/Influential_Points.pdf) | [Ch 4.2 of Linear Models with R](http://www.utstat.toronto.edu/~brunner/books/LinearModelsWithR.pdf) | | |
+| Tests of Normality and Equal Variance| [Ch 4.1, 4.3 of Linear Models with R](http://www.utstat.toronto.edu/~brunner/books/LinearModelsWithR.pdf) | | |
 | Collinearity | [Ch 5.3 of Linear Models with R](http://www.utstat.toronto.edu/~brunner/books/LinearModelsWithR.pdf)| | |
 | Transformations | [Ch 7 of Linear Models with R](http://www.utstat.toronto.edu/~brunner/books/LinearModelsWithR.pdf)| | |
 
