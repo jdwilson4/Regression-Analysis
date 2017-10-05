@@ -105,9 +105,9 @@ The focus of this course will be to provide you with the basic techniques availa
 | Topic | Reading | Practice | In-Class Code |
 |:--- | :---  | :---  |  :--- |
 | [Influential Points and Outliers](https://github.com/jdwilson4/Regression-Analysis/blob/master/Lectures/Influential_Points.pdf) | [Ch 4.2 of Linear Models with R](http://www.utstat.toronto.edu/~brunner/books/LinearModelsWithR.pdf) | | |
-| Tests of Normality and Equal Variance| [Ch 4.1, 4.3 of Linear Models with R](http://www.utstat.toronto.edu/~brunner/books/LinearModelsWithR.pdf) | | |
-| Collinearity | [Ch 5.3 of Linear Models with R](http://www.utstat.toronto.edu/~brunner/books/LinearModelsWithR.pdf)| | |
-| Transformations | [Ch 7 of Linear Models with R](http://www.utstat.toronto.edu/~brunner/books/LinearModelsWithR.pdf)| | |
+| [Tests of Normality and Equal Variance](https://github.com/jdwilson4/Regression-Analysis/blob/master/Lectures/Normality_Variance.pdf)| [Ch 4.1, 4.3 of Linear Models with R](http://www.utstat.toronto.edu/~brunner/books/LinearModelsWithR.pdf) | | |
+| [Collinearity](https://github.com/jdwilson4/Regression-Analysis/blob/master/Lectures/Collinearity.pdf) | [Ch 5.3 of Linear Models with R](http://www.utstat.toronto.edu/~brunner/books/LinearModelsWithR.pdf)| | |
+| [Transformations](https://github.com/jdwilson4/Regression-Analysis/blob/master/Lectures/Transformations.pdf) | [Ch 7 of Linear Models with R](http://www.utstat.toronto.edu/~brunner/books/LinearModelsWithR.pdf)| | |
 
 
 **Generalized Linear Models**
@@ -115,7 +115,7 @@ The focus of this course will be to provide you with the basic techniques availa
 | Topic | Reading | Practice | In-Class Code |
 |:--- | :---  | :---  |  :--- |
 | Logistic and Multinomial Regression | | | | 
-| Poisson Regression | | | | 
+
 
 
 ### Additional Resources
