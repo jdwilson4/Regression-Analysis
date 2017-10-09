@@ -114,7 +114,7 @@ The focus of this course will be to provide you with the basic techniques availa
 
 | Topic | Reading | Practice | In-Class Code |
 |:--- | :---  | :---  |  :--- |
-| Logistic and Multinomial Regression | | | | 
+| [Classification and Logistic Regression](https://github.com/jdwilson4/Regression-Analysis/blob/master/Lectures/Logistic Regression.pdf) | | [Ch. 4.3 of ISL](http://www-bcf.usc.edu/~gareth/ISL/ISLR%20First%20Printing.pdf)| | 
 
 
 
