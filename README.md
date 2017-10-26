@@ -12,7 +12,6 @@
 
 **Grader**: Anshika Srivastava (asrivastava3@dons.usfca.edu)
 
-**Syllabus**: [Link](https://github.com/jdwilson4/Regression-Analysis/blob/master/Fall_2017.pdf)
 
 ## Textbooks
 
@@ -57,8 +56,8 @@ The focus of this course will be to provide you with the basic techniques availa
 
 - **Assignments** (30%): You will be assigned computational and theoretical homework assignments to be completed and turned in on Canvas
 - **Quizzes** (20%): Each week you will be given a short quiz that tests the main lessons taught in class from the previous week. These are given on **Mondays at 9:00 AM**
-- **Final Exam** (20%): The final exam will be a comprehensive exam covering the main components of Regression analysis
-- **Final Project** (30%): The final project will be a computational case study that brings together the techniques learned throughout the semester. The description for this project will be provided towards the mid point of the semester.
+- **Final Exam** (30%): The final exam will be a comprehensive exam covering the main components of Regression analysis
+- **Final Project** (20%): The final project will be a computational case study that brings together the techniques learned throughout the semester. The description for this project will be provided towards the mid point of the semester.
 
 ### Quizzes
 
